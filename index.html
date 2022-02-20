@@ -6,8 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>IstVolkerWissingNochImAmt?</title>
-    <link href="./css/styles.css" rel="stylesheet" />
-    <script src="./js/main.js"></script>
+    <style>
+      html {
+        --main-bg-color: brown;
+      }
+      html,
+      body {
+        background-color: var(--main-bg-color);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat";
+      }
+      .body {
+        color: white;
+        text-align: center;
+      }
+
+      .yes {
+        margin-top: -10vw;
+        font-size: 25vw;
+        font-weight: 900;
+      }
+
+      .note {
+        margin-top: 2rem;
+        font-size: 3vw;
+        font-weight: 900;
+      }
+
+      .note a {
+        text-decoration: none;
+        color: white;
+        transition: 150ms;
+      }
+
+      .note a:hover {
+        text-shadow: 0px 0px 10px white;
+      }
+      .note a::before {
+        content: "🔗";
+        margin-right: 1vw;
+      }
+    </style>
+    <script>
+      const colors = [
+        "#00ABAE",
+        "#E5007D",
+        "#009ee3",
+        "#a5027d",
+        "#739600",
+        "#1F5EA8",
+        "#F72C2C",
+        "#FA5021",
+        "#FB9F54",
+        "#FFAD00",
+        "#55C934",
+        "#4CAF58",
+        "#1FA895",
+        "#1FD2DB",
+        "#2196F3",
+        "#61338F",
+        "#B32E37",
+      ];
+
+      document.documentElement.style.setProperty(
+        "--main-bg-color",
+        colors[Math.floor(Math.random() * colors.length)]
+      );
+    </script>
   </head>
   <body>
     <div class="body">
